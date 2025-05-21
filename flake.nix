@@ -35,6 +35,7 @@
             pkgs.docker
             pkgs.netcat
             pkgs.gum
+            pkgs.grep
           ];
           shellHook = ''
             echo "Nix development environment for the clone-database-script is ready."
