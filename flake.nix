@@ -16,11 +16,9 @@
         packages.default = pkgs.stdenv.mkDerivation {
           pname = scriptName;
           version = "1.0.0";
-          src = scriptSrc;
-          dontUnpack = true;
           installPhase = ''
             mkdir -p $out/bin
-            cp $src $out/bin/${scriptName}
+            cp ${scriptSrc} $out/bin/${scriptName}
             chmod +x $out/bin/${scriptName}
           '';
           postFixup = ''
