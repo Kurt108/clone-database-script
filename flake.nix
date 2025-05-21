@@ -1,5 +1,5 @@
 {
-  description = "Nix development environment for the clone-database-script";
+  description = "Nix Flake für clone-database-script.sh";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
@@ -11,14 +11,15 @@
       let
         pkgs = import nixpkgs { inherit system; };
         scriptName = "clone-database-script";
-        scriptSrc = ./src/clone-database-script.sh;
       in {
         packages.default = pkgs.stdenv.mkDerivation {
           pname = scriptName;
           version = "1.0.0";
+          src = ./.;
+          nativeBuildInputs = [ pkgs.makeWrapper pkgs.coreutils ];
           installPhase = ''
             mkdir -p $out/bin
-            cp ${scriptSrc} $out/bin/${scriptName}
+            cp src/clone-database-script.sh $out/bin/${scriptName}
             chmod +x $out/bin/${scriptName}
           '';
           postFixup = ''
