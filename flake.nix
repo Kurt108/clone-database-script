@@ -11,19 +11,17 @@
       let
         pkgs = import nixpkgs { inherit system; };
         scriptName = "clone-database-script";
-        src = ./src/clone-database-script.sh;
+        scriptSrc = ./src/clone-database-script.sh;
       in {
         packages.default = pkgs.stdenv.mkDerivation {
           pname = scriptName;
           version = "1.0.0";
-          src = src;
-          phases = [ "installPhase" ];
+          dontUnpack = true;
           installPhase = ''
             mkdir -p $out/bin
-            cp $src $out/bin/${scriptName}
+            cp ${scriptSrc} $out/bin/${scriptName}
             chmod +x $out/bin/${scriptName}
           '';
-          dontUnpack = true;
           postFixup = ''
             wrapProgram $out/bin/${scriptName} \
               --set PATH ${pkgs.lib.makeBinPath [ pkgs.bash pkgs.kubectl pkgs.docker pkgs.netcat pkgs.gum ]}
