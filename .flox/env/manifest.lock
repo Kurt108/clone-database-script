@@ -1,0 +1,274 @@
+{
+  "lockfile-version": 1,
+  "manifest": {
+    "version": 1,
+    "install": {
+      "gum": {
+        "pkg-path": "gum"
+      },
+      "kubectl": {
+        "pkg-path": "kubectl"
+      }
+    },
+    "hook": {},
+    "profile": {},
+    "options": {
+      "systems": [
+        "aarch64-darwin",
+        "aarch64-linux",
+        "x86_64-darwin",
+        "x86_64-linux"
+      ],
+      "allow": {
+        "licenses": []
+      },
+      "semver": {}
+    }
+  },
+  "packages": [
+    {
+      "attr_path": "gum",
+      "broken": false,
+      "derivation": "/nix/store/01as3jvjai6ny6v3l5ala8fj6z4v30lz-gum-0.16.0.drv",
+      "description": "Tasty Bubble Gum for your shell",
+      "install_id": "gum",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=292fa7d4f6519c074f0a50394dbbe69859bb6043",
+      "name": "gum-0.16.0",
+      "pname": "gum",
+      "rev": "292fa7d4f6519c074f0a50394dbbe69859bb6043",
+      "rev_count": 802366,
+      "rev_date": "2025-05-18T04:33:40Z",
+      "scrape_date": "2025-05-20T04:26:06.567272Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.16.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/amyw3aaqgpchs5cq8hh3d1wdy1hxfjav-gum-0.16.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gum",
+      "broken": false,
+      "derivation": "/nix/store/km57dk559gffmvsjz61bv0dymyyqx2d4-gum-0.16.0.drv",
+      "description": "Tasty Bubble Gum for your shell",
+      "install_id": "gum",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=292fa7d4f6519c074f0a50394dbbe69859bb6043",
+      "name": "gum-0.16.0",
+      "pname": "gum",
+      "rev": "292fa7d4f6519c074f0a50394dbbe69859bb6043",
+      "rev_count": 802366,
+      "rev_date": "2025-05-18T04:33:40Z",
+      "scrape_date": "2025-05-20T04:48:48.921133Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.16.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/l6v1k7zn25ndvm4axmsbf10b8v8g78jp-gum-0.16.0"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gum",
+      "broken": false,
+      "derivation": "/nix/store/nkmpy7npqsw4i8z06d44k9fv58wvxn6i-gum-0.16.0.drv",
+      "description": "Tasty Bubble Gum for your shell",
+      "install_id": "gum",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=292fa7d4f6519c074f0a50394dbbe69859bb6043",
+      "name": "gum-0.16.0",
+      "pname": "gum",
+      "rev": "292fa7d4f6519c074f0a50394dbbe69859bb6043",
+      "rev_count": 802366,
+      "rev_date": "2025-05-18T04:33:40Z",
+      "scrape_date": "2025-05-20T05:09:14.319348Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.16.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/mkz77pxvh7h0iamhwwbzmaamcbnri130-gum-0.16.0"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gum",
+      "broken": false,
+      "derivation": "/nix/store/951v689kca12iqxpjc2av4yq6mkj42kk-gum-0.16.0.drv",
+      "description": "Tasty Bubble Gum for your shell",
+      "install_id": "gum",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=292fa7d4f6519c074f0a50394dbbe69859bb6043",
+      "name": "gum-0.16.0",
+      "pname": "gum",
+      "rev": "292fa7d4f6519c074f0a50394dbbe69859bb6043",
+      "rev_count": 802366,
+      "rev_date": "2025-05-18T04:33:40Z",
+      "scrape_date": "2025-05-20T05:44:50.841556Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.16.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/w094m6kjn97wa2wrvj4mrjng0fnzmpw3-gum-0.16.0"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "kubectl",
+      "broken": false,
+      "derivation": "/nix/store/zvar1z4a39gbq2yz144p0wjnjxg403fc-kubectl-1.33.0.drv",
+      "description": "Kubernetes CLI",
+      "install_id": "kubectl",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=292fa7d4f6519c074f0a50394dbbe69859bb6043",
+      "name": "kubectl-1.33.0",
+      "pname": "kubectl",
+      "rev": "292fa7d4f6519c074f0a50394dbbe69859bb6043",
+      "rev_count": 802366,
+      "rev_date": "2025-05-18T04:33:40Z",
+      "scrape_date": "2025-05-20T04:26:07.039074Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.33.0",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "convert": "/nix/store/xapln59nb67wbsvvcj8rqxh63nzvljwy-kubectl-1.33.0-convert",
+        "man": "/nix/store/a9xsp33pfmng1411zzank853is0dlk5q-kubectl-1.33.0-man",
+        "out": "/nix/store/402qdc96z88sil3j4wgr780nqlfl7fvz-kubectl-1.33.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "kubectl",
+      "broken": false,
+      "derivation": "/nix/store/08nvahrk67cd8ism1rrq59dfcy2v5wwh-kubectl-1.33.0.drv",
+      "description": "Kubernetes CLI",
+      "install_id": "kubectl",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=292fa7d4f6519c074f0a50394dbbe69859bb6043",
+      "name": "kubectl-1.33.0",
+      "pname": "kubectl",
+      "rev": "292fa7d4f6519c074f0a50394dbbe69859bb6043",
+      "rev_count": 802366,
+      "rev_date": "2025-05-18T04:33:40Z",
+      "scrape_date": "2025-05-20T04:48:50.511281Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.33.0",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "convert": "/nix/store/mxnjb3lh156b0g0agfczhkrs6cyqx4is-kubectl-1.33.0-convert",
+        "man": "/nix/store/9jh6dknzzkjabs64zl4qrzfm8pnhx03l-kubectl-1.33.0-man",
+        "out": "/nix/store/qms0pllz09sckfcrxyy03790jdryn802-kubectl-1.33.0"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "kubectl",
+      "broken": false,
+      "derivation": "/nix/store/rii5fvl55kayk9q7drinja43lylr79a0-kubectl-1.33.0.drv",
+      "description": "Kubernetes CLI",
+      "install_id": "kubectl",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=292fa7d4f6519c074f0a50394dbbe69859bb6043",
+      "name": "kubectl-1.33.0",
+      "pname": "kubectl",
+      "rev": "292fa7d4f6519c074f0a50394dbbe69859bb6043",
+      "rev_count": 802366,
+      "rev_date": "2025-05-18T04:33:40Z",
+      "scrape_date": "2025-05-20T05:09:14.797429Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.33.0",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "convert": "/nix/store/h3jb5f5lb7s6gz3522sk0gf458c3wmaq-kubectl-1.33.0-convert",
+        "man": "/nix/store/pnabai47mcqnnh0q3zzcbfsnhbl3dbnm-kubectl-1.33.0-man",
+        "out": "/nix/store/ry8arpjf8x8gzcsb2gmdx360613lpxgz-kubectl-1.33.0"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "kubectl",
+      "broken": false,
+      "derivation": "/nix/store/vc8qqlsqpxmqsy6kvqf2whn759rds4ap-kubectl-1.33.0.drv",
+      "description": "Kubernetes CLI",
+      "install_id": "kubectl",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=292fa7d4f6519c074f0a50394dbbe69859bb6043",
+      "name": "kubectl-1.33.0",
+      "pname": "kubectl",
+      "rev": "292fa7d4f6519c074f0a50394dbbe69859bb6043",
+      "rev_count": 802366,
+      "rev_date": "2025-05-18T04:33:40Z",
+      "scrape_date": "2025-05-20T05:44:52.532893Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.33.0",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "convert": "/nix/store/m5ng07c66w7aqxj26i9s8968k0b9k10x-kubectl-1.33.0-convert",
+        "man": "/nix/store/ifif1zqv5k8z5ggpvh5x3iynhyc9ma5v-kubectl-1.33.0-man",
+        "out": "/nix/store/f93la7iy82zzmhr9wc5rxh18yqajr95v-kubectl-1.33.0"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    }
+  ]
+}
