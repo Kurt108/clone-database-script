@@ -8,6 +8,9 @@
       },
       "kubectl": {
         "pkg-path": "kubectl"
+      },
+      "nix": {
+        "pkg-path": "nix"
       }
     },
     "hook": {},
@@ -33,13 +36,13 @@
       "description": "Tasty Bubble Gum for your shell",
       "install_id": "gum",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=292fa7d4f6519c074f0a50394dbbe69859bb6043",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
       "name": "gum-0.16.0",
       "pname": "gum",
-      "rev": "292fa7d4f6519c074f0a50394dbbe69859bb6043",
-      "rev_count": 802366,
-      "rev_date": "2025-05-18T04:33:40Z",
-      "scrape_date": "2025-05-20T04:26:06.567272Z",
+      "rev": "2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
+      "rev_count": 803506,
+      "rev_date": "2025-05-20T12:29:04Z",
+      "scrape_date": "2025-05-24T04:22:06.527589Z",
       "stabilities": [
         "unstable"
       ],
@@ -62,13 +65,13 @@
       "description": "Tasty Bubble Gum for your shell",
       "install_id": "gum",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=292fa7d4f6519c074f0a50394dbbe69859bb6043",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
       "name": "gum-0.16.0",
       "pname": "gum",
-      "rev": "292fa7d4f6519c074f0a50394dbbe69859bb6043",
-      "rev_count": 802366,
-      "rev_date": "2025-05-18T04:33:40Z",
-      "scrape_date": "2025-05-20T04:48:48.921133Z",
+      "rev": "2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
+      "rev_count": 803506,
+      "rev_date": "2025-05-20T12:29:04Z",
+      "scrape_date": "2025-05-24T04:40:30.826446Z",
       "stabilities": [
         "unstable"
       ],
@@ -91,13 +94,13 @@
       "description": "Tasty Bubble Gum for your shell",
       "install_id": "gum",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=292fa7d4f6519c074f0a50394dbbe69859bb6043",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
       "name": "gum-0.16.0",
       "pname": "gum",
-      "rev": "292fa7d4f6519c074f0a50394dbbe69859bb6043",
-      "rev_count": 802366,
-      "rev_date": "2025-05-18T04:33:40Z",
-      "scrape_date": "2025-05-20T05:09:14.319348Z",
+      "rev": "2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
+      "rev_count": 803506,
+      "rev_date": "2025-05-20T12:29:04Z",
+      "scrape_date": "2025-05-24T04:56:40.636660Z",
       "stabilities": [
         "unstable"
       ],
@@ -120,13 +123,13 @@
       "description": "Tasty Bubble Gum for your shell",
       "install_id": "gum",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=292fa7d4f6519c074f0a50394dbbe69859bb6043",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
       "name": "gum-0.16.0",
       "pname": "gum",
-      "rev": "292fa7d4f6519c074f0a50394dbbe69859bb6043",
-      "rev_count": 802366,
-      "rev_date": "2025-05-18T04:33:40Z",
-      "scrape_date": "2025-05-20T05:44:50.841556Z",
+      "rev": "2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
+      "rev_count": 803506,
+      "rev_date": "2025-05-20T12:29:04Z",
+      "scrape_date": "2025-05-24T05:16:09.646684Z",
       "stabilities": [
         "unstable"
       ],
@@ -149,13 +152,13 @@
       "description": "Kubernetes CLI",
       "install_id": "kubectl",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=292fa7d4f6519c074f0a50394dbbe69859bb6043",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
       "name": "kubectl-1.33.0",
       "pname": "kubectl",
-      "rev": "292fa7d4f6519c074f0a50394dbbe69859bb6043",
-      "rev_count": 802366,
-      "rev_date": "2025-05-18T04:33:40Z",
-      "scrape_date": "2025-05-20T04:26:07.039074Z",
+      "rev": "2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
+      "rev_count": 803506,
+      "rev_date": "2025-05-20T12:29:04Z",
+      "scrape_date": "2025-05-24T04:22:07.020908Z",
       "stabilities": [
         "unstable"
       ],
@@ -181,13 +184,13 @@
       "description": "Kubernetes CLI",
       "install_id": "kubectl",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=292fa7d4f6519c074f0a50394dbbe69859bb6043",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
       "name": "kubectl-1.33.0",
       "pname": "kubectl",
-      "rev": "292fa7d4f6519c074f0a50394dbbe69859bb6043",
-      "rev_count": 802366,
-      "rev_date": "2025-05-18T04:33:40Z",
-      "scrape_date": "2025-05-20T04:48:50.511281Z",
+      "rev": "2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
+      "rev_count": 803506,
+      "rev_date": "2025-05-20T12:29:04Z",
+      "scrape_date": "2025-05-24T04:40:32.386866Z",
       "stabilities": [
         "unstable"
       ],
@@ -213,13 +216,13 @@
       "description": "Kubernetes CLI",
       "install_id": "kubectl",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=292fa7d4f6519c074f0a50394dbbe69859bb6043",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
       "name": "kubectl-1.33.0",
       "pname": "kubectl",
-      "rev": "292fa7d4f6519c074f0a50394dbbe69859bb6043",
-      "rev_count": 802366,
-      "rev_date": "2025-05-18T04:33:40Z",
-      "scrape_date": "2025-05-20T05:09:14.797429Z",
+      "rev": "2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
+      "rev_count": 803506,
+      "rev_date": "2025-05-20T12:29:04Z",
+      "scrape_date": "2025-05-24T04:56:41.121769Z",
       "stabilities": [
         "unstable"
       ],
@@ -245,13 +248,13 @@
       "description": "Kubernetes CLI",
       "install_id": "kubectl",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=292fa7d4f6519c074f0a50394dbbe69859bb6043",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
       "name": "kubectl-1.33.0",
       "pname": "kubectl",
-      "rev": "292fa7d4f6519c074f0a50394dbbe69859bb6043",
-      "rev_count": 802366,
-      "rev_date": "2025-05-18T04:33:40Z",
-      "scrape_date": "2025-05-20T05:44:52.532893Z",
+      "rev": "2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
+      "rev_count": 803506,
+      "rev_date": "2025-05-20T12:29:04Z",
+      "scrape_date": "2025-05-24T05:16:11.389315Z",
       "stabilities": [
         "unstable"
       ],
@@ -265,6 +268,138 @@
         "convert": "/nix/store/m5ng07c66w7aqxj26i9s8968k0b9k10x-kubectl-1.33.0-convert",
         "man": "/nix/store/ifif1zqv5k8z5ggpvh5x3iynhyc9ma5v-kubectl-1.33.0-man",
         "out": "/nix/store/f93la7iy82zzmhr9wc5rxh18yqajr95v-kubectl-1.33.0"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "nix",
+      "broken": false,
+      "derivation": "/nix/store/mk55sg4rq2gkbpxfcwz6zh4gbs711vm5-nix-2.28.3.drv",
+      "description": "Powerful package manager that makes package management reliable and reproducible",
+      "install_id": "nix",
+      "license": "LGPL-2.1-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
+      "name": "nix-2.28.3",
+      "pname": "nix",
+      "rev": "2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
+      "rev_count": 803506,
+      "rev_date": "2025-05-20T12:29:04Z",
+      "scrape_date": "2025-05-24T04:22:08.823203Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.28.3",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/rcbkvd5w99pmzxw1kyrwizykkkizvqqw-nix-2.28.3-dev",
+        "doc": "/nix/store/05fg9s2h2qavr2m94yk4nlmgm9am3vh0-nix-2.28.3-doc",
+        "man": "/nix/store/dl4l0wkq4p6aczsmbbq9llrkqfd0jap5-nix-2.28.3-man",
+        "out": "/nix/store/325brpj1r54vpwrjxddclycll790hz3q-nix-2.28.3"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "nix",
+      "broken": false,
+      "derivation": "/nix/store/mw023rf9gr2m2y36nym8iwm9mrdqgj49-nix-2.28.3.drv",
+      "description": "Powerful package manager that makes package management reliable and reproducible",
+      "install_id": "nix",
+      "license": "LGPL-2.1-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
+      "name": "nix-2.28.3",
+      "pname": "nix",
+      "rev": "2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
+      "rev_count": 803506,
+      "rev_date": "2025-05-20T12:29:04Z",
+      "scrape_date": "2025-05-24T04:40:39.547813Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.28.3",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/k30k174davq3jgllc83plp19xqkf2wgi-nix-2.28.3-dev",
+        "doc": "/nix/store/4glb59hfdfk3rzldr91fxdlcnaz54fvl-nix-2.28.3-doc",
+        "man": "/nix/store/dm920gvmdfj5wdv5imh552jqa1v7rld5-nix-2.28.3-man",
+        "out": "/nix/store/9jv6wfwwllqg954h8imvcw4k9ri8cx0g-nix-2.28.3"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "nix",
+      "broken": false,
+      "derivation": "/nix/store/0fcw489kvz67bcl4ksqq5kjlda56pwg6-nix-2.28.3.drv",
+      "description": "Powerful package manager that makes package management reliable and reproducible",
+      "install_id": "nix",
+      "license": "LGPL-2.1-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
+      "name": "nix-2.28.3",
+      "pname": "nix",
+      "rev": "2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
+      "rev_count": 803506,
+      "rev_date": "2025-05-20T12:29:04Z",
+      "scrape_date": "2025-05-24T04:56:42.855311Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.28.3",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/rbshmmjbd7ws8y3l9qxhd366dk0280rg-nix-2.28.3-dev",
+        "doc": "/nix/store/c82vz1gfx37598zm81qpg94ivh6rcn74-nix-2.28.3-doc",
+        "man": "/nix/store/68zyzr3nh7jcwvpclwvl9dqn499h1k98-nix-2.28.3-man",
+        "out": "/nix/store/yfdgpln88ybdzxrqdibbwvw85rgms4kg-nix-2.28.3"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "nix",
+      "broken": false,
+      "derivation": "/nix/store/slaagjsj6rkzm41ncwkbjs52h9rqb627-nix-2.28.3.drv",
+      "description": "Powerful package manager that makes package management reliable and reproducible",
+      "install_id": "nix",
+      "license": "LGPL-2.1-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
+      "name": "nix-2.28.3",
+      "pname": "nix",
+      "rev": "2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
+      "rev_count": 803506,
+      "rev_date": "2025-05-20T12:29:04Z",
+      "scrape_date": "2025-05-24T05:16:20.398290Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.28.3",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/pdiiwgd0vk3jvgmaq36dlf3n30j23bpi-nix-2.28.3-dev",
+        "doc": "/nix/store/iq8lnwnm9sccdigriw2jbwax42g3i3gq-nix-2.28.3-doc",
+        "man": "/nix/store/8gbvc4h0ib165k59vlw3qjy60b16zxfy-nix-2.28.3-man",
+        "out": "/nix/store/0v3pik27j1v4jv66n7spzwbdzpqgqm35-nix-2.28.3"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
