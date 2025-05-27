@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 set -e
-DB_DUMP_FILENAME="${1:=database-dump.sql}"  # If VARIABLE not set or null, set its value to 'default'. 
-MARIADB_IMAGE="${2:=mariadb:10.11.7}"  # If VARIABLE not set or null, set its value to 'default'. 
+DB_DUMP_FILENAME="${1:-database-dump.sql}"  # If VARIABLE not set or null, set its value to 'default'. 
+MARIADB_IMAGE="${2:-mariadb:10.11.7}"  # If VARIABLE not set or null, set its value to 'default'. 
 
 gum log --level info "usage..."
 gum log --level warn "variables are read from .env-file. please specify DB_DUMP_FILENAME and MARIADB_IMAGE"
