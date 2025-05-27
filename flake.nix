@@ -24,7 +24,7 @@
           '';
           postFixup = ''
             wrapProgram $out/bin/${scriptName} \
-              --set PATH ${pkgs.lib.makeBinPath [ pkgs.bash pkgs.kubectl pkgs.kubectx pkgs.docker pkgs.netcat pkgs.gum pkgs.grep]}
+              --set PATH ${pkgs.lib.makeBinPath [ pkgs.bash pkgs.kubectl pkgs.kubectx pkgs.docker pkgs.netcat pkgs.gum pkgs.gnugrep]}
           '';
         };
 
@@ -36,7 +36,7 @@
             pkgs.docker
             pkgs.netcat
             pkgs.gum
-            pkgs.grep
+            pkgs.gnugrep
           ];
           shellHook = ''
             echo "Nix development environment for the clone-database-script is ready."
