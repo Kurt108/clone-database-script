@@ -14,7 +14,7 @@
       in {
         packages.default = pkgs.stdenv.mkDerivation {
           pname = scriptName;
-          version = "1.1.0";
+          version = "1.1.1";
           src = ./.;
           nativeBuildInputs = [ pkgs.makeWrapper pkgs.coreutils ];
           installPhase = ''
@@ -24,7 +24,7 @@
           '';
           postFixup = ''
             wrapProgram $out/bin/${scriptName} \
-              --set PATH ${pkgs.lib.makeBinPath [ pkgs.bash pkgs.kubectl pkgs.kubectx pkgs.docker pkgs.netcat pkgs.gum ]}
+              --set PATH ${pkgs.lib.makeBinPath [ pkgs.bash pkgs.kubectl pkgs.kubectx pkgs.docker pkgs.netcat pkgs.gum pkgs.grep]}
           '';
         };
 
