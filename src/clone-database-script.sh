@@ -1,20 +1,31 @@
 #!/usr/bin/env bash
 
 set -e
+DB_DUMP_FILENAME="${1:=database-dump.sql}"  # If VARIABLE not set or null, set its value to 'default'. 
+MARIADB_IMAGE="${2:=mariadb:10.11.7}"  # If VARIABLE not set or null, set its value to 'default'. 
 
-DB_DUMP_FILENAME=database-dump.sql
-MARIADB_IMAGE=mariadb:10.11.7 # pin to 10.11.7 to avoid issues with mariadb sandbox-mode when importing the dump: https://mariadb.org/mariadb-dump-file-compatibility-change/
+gum log --level info "usage..."
+gum log --level warn "variables are read from .env-file. please specify DB_DUMP_FILENAME and MARIADB_IMAGE"
+gum log --level info "DB_DUMP_FILENAME is set to $DB_DUMP_FILENAME"
+gum log --level info "MARIADB_IMAGE is set to $MARIADB_IMAGE" 
+
+
+
+
+
+gum log --level info "checking prequesites..."
+if docker info > /dev/null 2>&1; then
+  gum log --level info "Docker Daemon is available"
+else
+  gum log --level info "Docker Daemon is not available. Please start Docker Daemon"
+  exit 1
+fi
+
 
 gum log --level info "bootstrapping..."
 grep $DB_DUMP_FILENAME .gitignore || echo $DB_DUMP_FILENAME >> .gitignore
 gum log --level info "done"
 
-if docker info > /dev/null 2>&1; then
-  echo "Docker Daemon is available"
-else
-  echo "Docker Daemon is not available. Please start Docker Daemon"
-  exit 1
-fi
 
 gum log --level info "Selecting Cluster and Namespace and Pod and dump database using Docker-Container MariadDB"
 SRC_CLUSTER=$(gum choose \
