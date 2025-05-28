@@ -11,6 +11,9 @@
       },
       "nix": {
         "pkg-path": "nix"
+      },
+      "shellcheck": {
+        "pkg-path": "shellcheck"
       }
     },
     "hook": {},
@@ -400,6 +403,142 @@
         "doc": "/nix/store/iq8lnwnm9sccdigriw2jbwax42g3i3gq-nix-2.28.3-doc",
         "man": "/nix/store/8gbvc4h0ib165k59vlw3qjy60b16zxfy-nix-2.28.3-man",
         "out": "/nix/store/0v3pik27j1v4jv66n7spzwbdzpqgqm35-nix-2.28.3"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "shellcheck",
+      "broken": false,
+      "derivation": "/nix/store/3ld78sscwlr4x8whkaxjbx8liqh0vc6y-shellcheck-0.10.0.drv",
+      "description": "Shell script analysis tool",
+      "install_id": "shellcheck",
+      "license": "GPL-3.0-only",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
+      "name": "shellcheck-0.10.0",
+      "pname": "shellcheck",
+      "rev": "2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
+      "rev_count": 803506,
+      "rev_date": "2025-05-20T12:29:04Z",
+      "scrape_date": "2025-05-24T04:22:47.633849Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.10.0",
+      "outputs_to_install": [
+        "bin",
+        "doc",
+        "man"
+      ],
+      "outputs": {
+        "bin": "/nix/store/4l7lf05gw9l0l84sssaxkwqb6arkx652-shellcheck-0.10.0-bin",
+        "doc": "/nix/store/mwahkil7jkc2y4y0q3myrkicp366vb82-shellcheck-0.10.0-doc",
+        "man": "/nix/store/f0fscjx6xa6kbczhav1bh0vq3w2pmwfn-shellcheck-0.10.0-man",
+        "out": "/nix/store/fbj9729m17pdvlinsdqxnd8ddl4iirzm-shellcheck-0.10.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "shellcheck",
+      "broken": false,
+      "derivation": "/nix/store/0pldv3zw7r8qz5idxh2sc1mnw44ic7wl-shellcheck-0.10.0.drv",
+      "description": "Shell script analysis tool",
+      "install_id": "shellcheck",
+      "license": "GPL-3.0-only",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
+      "name": "shellcheck-0.10.0",
+      "pname": "shellcheck",
+      "rev": "2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
+      "rev_count": 803506,
+      "rev_date": "2025-05-20T12:29:04Z",
+      "scrape_date": "2025-05-24T04:41:34.586257Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.10.0",
+      "outputs_to_install": [
+        "bin",
+        "doc",
+        "man"
+      ],
+      "outputs": {
+        "bin": "/nix/store/irlalbizkr3bn83g1drmi4p4h4dx16i6-shellcheck-0.10.0-bin",
+        "doc": "/nix/store/c3s6fpb28bfm02vbpi9cvxpxyymzmx9n-shellcheck-0.10.0-doc",
+        "man": "/nix/store/zfpypv8l8py55rifk9yhzcis13z4sc5k-shellcheck-0.10.0-man",
+        "out": "/nix/store/6lgybvih5m2qinh419qzn52q6k4fwf4m-shellcheck-0.10.0"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "shellcheck",
+      "broken": false,
+      "derivation": "/nix/store/j1b6jpl8sy782fyh2g0xn76wbc49pkr0-shellcheck-0.10.0.drv",
+      "description": "Shell script analysis tool",
+      "install_id": "shellcheck",
+      "license": "GPL-3.0-only",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
+      "name": "shellcheck-0.10.0",
+      "pname": "shellcheck",
+      "rev": "2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
+      "rev_count": 803506,
+      "rev_date": "2025-05-20T12:29:04Z",
+      "scrape_date": "2025-05-24T04:57:19.402379Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.10.0",
+      "outputs_to_install": [
+        "bin",
+        "doc",
+        "man"
+      ],
+      "outputs": {
+        "bin": "/nix/store/z8v7j4xkwswrx5vc05cfn9yp9sbxfkd2-shellcheck-0.10.0-bin",
+        "doc": "/nix/store/df107d185wg9kqc03aaq1fcyl2bknjnc-shellcheck-0.10.0-doc",
+        "man": "/nix/store/q88aiz7agllcjb8zflwlh23fm2wh431f-shellcheck-0.10.0-man",
+        "out": "/nix/store/wz9qinlsaghahhj2bvlva9lgz3d8g07s-shellcheck-0.10.0"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "shellcheck",
+      "broken": false,
+      "derivation": "/nix/store/5409ia8lg74w7bwyd1jpxzayxi54y3b2-shellcheck-0.10.0.drv",
+      "description": "Shell script analysis tool",
+      "install_id": "shellcheck",
+      "license": "GPL-3.0-only",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
+      "name": "shellcheck-0.10.0",
+      "pname": "shellcheck",
+      "rev": "2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
+      "rev_count": 803506,
+      "rev_date": "2025-05-20T12:29:04Z",
+      "scrape_date": "2025-05-24T05:17:20.828394Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.10.0",
+      "outputs_to_install": [
+        "bin",
+        "doc",
+        "man"
+      ],
+      "outputs": {
+        "bin": "/nix/store/dw5aa0sf40aahg0fbwgfjwhjxnnrmipl-shellcheck-0.10.0-bin",
+        "doc": "/nix/store/mfn1kxg9asp4nq4yrcr3niz5kfddaisf-shellcheck-0.10.0-doc",
+        "man": "/nix/store/6ksvcjrdzxn89ql0059g2hs0nmw0rf5v-shellcheck-0.10.0-man",
+        "out": "/nix/store/gxzk021q0f0h0jqwxiqikl1gkiih7qiq-shellcheck-0.10.0"
       },
       "system": "x86_64-linux",
       "group": "toplevel",

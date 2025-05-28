@@ -23,7 +23,7 @@ fi
 
 
 gum log --level info "bootstrapping..."
-grep $DB_DUMP_FILENAME .gitignore || echo $DB_DUMP_FILENAME >> .gitignore
+grep "$DB_DUMP_FILENAME" .gitignore || echo "$DB_DUMP_FILENAME" >> .gitignore
 gum log --level info "done"
 
 
@@ -38,16 +38,16 @@ if [ "$SRC_CLUSTER" == "CANCEL" ] ; then
   exit 1
 fi
 gum log --level info "Selected cluster: $SRC_CLUSTER"
-kubectx $SRC_CLUSTER
+kubectx "$SRC_CLUSTER"
 NAMESPACE_FILTER=$(gum input --placeholder "Choose the Namespace-Filter")
 SRC_NAMESPACE=$(gum choose \
   --header "Choose the SRC namespace to connect to" \
   --cursor ">" \
-  $(kubectl get namespace --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}' | grep $NAMESPACE_FILTER) CANCEL)
+  $(kubectl get namespace --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}' | grep "$NAMESPACE_FILTER") CANCEL)
 SRC_MARIADB_POD=$(gum choose \
   --header "Choose the MariaDB-Pod" \
   --cursor ">" \
-  $(kubectl --namespace $SRC_NAMESPACE get pods -o name | grep mariadb) CANCEL) 
+  $(kubectl --namespace "$SRC_NAMESPACE" get pods -o name | grep mariadb) CANCEL) 
 
 if [ "$SRC_NAMESPACE" == "CANCEL" ] ; then
   gum log --level error "No namespace selected"
@@ -55,9 +55,9 @@ if [ "$SRC_NAMESPACE" == "CANCEL" ] ; then
 fi
 gum log --level info "Selected Namespace: $SRC_NAMESPACE"
 
-SRC_DATABASE_NAME=$(kubectl get secret database --namespace $SRC_NAMESPACE  -o jsonpath='{.data.DATABASE_NAME}' | base64 -d)
-SRC_DATABASE_USER=$(kubectl  get secret database --namespace $SRC_NAMESPACE -o jsonpath='{.data.DATABASE_USER}' | base64 -d)
-SRC_DATABASE_PASSWORD=$(kubectl  get secret database --namespace $SRC_NAMESPACE -o jsonpath='{.data.DATABASE_PASSWORD}' | base64 -d)
+SRC_DATABASE_NAME=$(kubectl get secret database --namespace "$SRC_NAMESPACE"  -o jsonpath='{.data.DATABASE_NAME}' | base64 -d)
+SRC_DATABASE_USER=$(kubectl  get secret database --namespace "$SRC_NAMESPACE" -o jsonpath='{.data.DATABASE_USER}' | base64 -d)
+SRC_DATABASE_PASSWORD=$(kubectl  get secret database --namespace "$SRC_NAMESPACE" -o jsonpath='{.data.DATABASE_PASSWORD}' | base64 -d)
 
 gum log --level info "SRC mariadb pod: $SRC_MARIADB_POD"
 gum log --level info "SRC mariadb name: $SRC_DATABASE_NAME"
@@ -67,7 +67,7 @@ gum log --level info "SRC mariadb password: $SRC_DATABASE_PASSWORD"
 localport=3306
 remoteport=3306
 
-kubectl port-forward --namespace $SRC_NAMESPACE $SRC_MARIADB_POD $localport:$remoteport > /dev/null 2>&1 &
+kubectl port-forward --namespace "$SRC_NAMESPACE" "$SRC_MARIADB_POD" $localport:$remoteport > /dev/null 2>&1 &
 
 while ! nc -vz localhost $localport > /dev/null 2>&1 ; do
     gum log --level info "waiting for tunnel to be established: $pid"
@@ -95,12 +95,12 @@ if [ "$START" == "CANCEL" ] ; then
   exit 0
 fi
 
-docker run --rm $MARIADB_IMAGE mariadb-admin --host host.docker.internal -u $SRC_DATABASE_USER -p$SRC_DATABASE_PASSWORD status 
+docker run --rm "$MARIADB_IMAGE" mariadb-admin --host host.docker.internal -u "$SRC_DATABASE_USER" -p"$SRC_DATABASE_PASSWORD" status 
 
 gum log --level info "Dumping database $SRC_DATABASE_NAME from pod $SRC_MARIADB_POD to $DB_DUMP_FILENAME"
 
-gum spin --spinner dot --title "mariadb dump" -- docker run --rm $MARIADB_IMAGE mariadb-dump  --host host.docker.internal -u $SRC_DATABASE_USER -p$SRC_DATABASE_PASSWORD $SRC_DATABASE_NAME > $DB_DUMP_FILENAME
+gum spin --spinner dot --title "mariadb dump" -- docker run --rm "$MARIADB_IMAGE" mariadb-dump  --host host.docker.internal -u "$SRC_DATABASE_USER" -p"$SRC_DATABASE_PASSWORD" "$SRC_DATABASE_NAME" > "$DB_DUMP_FILENAME"
 
 gum log --level info "Copy Database to sql-scripts-dir"
 
-\cp -f $DB_DUMP_FILENAME ./eventDataBase/sql-scripts/00-baseline-dump.sql
+\cp -f "$DB_DUMP_FILENAME" ./eventDataBase/sql-scripts/00-baseline-dump.sql
