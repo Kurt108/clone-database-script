@@ -24,7 +24,7 @@
           '';
           postFixup = ''
             wrapProgram $out/bin/${scriptName} \
-              --set PATH ${pkgs.lib.makeBinPath [ pkgs.bash pkgs.kubectl pkgs.kubectx pkgs.docker pkgs.netcat pkgs.gum pkgs.gnugrep pkgs.coreutils pkgs.jq pkgs.sed]}
+              --set PATH ${pkgs.lib.makeBinPath [ pkgs.bash pkgs.kubectl pkgs.kubectx pkgs.docker pkgs.netcat pkgs.gum pkgs.gnugrep pkgs.coreutils pkgs.jq pkgs.sed ]}
           '';
         };
 
