@@ -14,7 +14,7 @@
       in {
         packages.default = pkgs.stdenv.mkDerivation {
           pname = scriptName;
-          version = "1.2.0";
+          version = "1.2.1";
           src = ./.;
           nativeBuildInputs = [ pkgs.makeWrapper pkgs.coreutils ];
           installPhase = ''
