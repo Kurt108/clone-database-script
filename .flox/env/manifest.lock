@@ -6,6 +6,9 @@
       "gum": {
         "pkg-path": "gum"
       },
+      "jq": {
+        "pkg-path": "jq"
+      },
       "kubectl": {
         "pkg-path": "kubectl"
       },
@@ -143,6 +146,142 @@
       ],
       "outputs": {
         "out": "/nix/store/w094m6kjn97wa2wrvj4mrjng0fnzmpw3-gum-0.16.0"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "jq",
+      "broken": false,
+      "derivation": "/nix/store/0dyzz3zd17z5yygalrckaf6vjhis50sn-jq-1.7.1.drv",
+      "description": "Lightweight and flexible command-line JSON processor",
+      "install_id": "jq",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
+      "name": "jq-1.7.1",
+      "pname": "jq",
+      "rev": "2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
+      "rev_count": 803506,
+      "rev_date": "2025-05-20T12:29:04Z",
+      "scrape_date": "2025-05-24T04:22:06.849348Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.7.1",
+      "outputs_to_install": [
+        "bin",
+        "man"
+      ],
+      "outputs": {
+        "bin": "/nix/store/5v1yqacl2lhgbrzgvbmnxbxah9pdyp2s-jq-1.7.1-bin",
+        "dev": "/nix/store/12zb2s8cmrbgi53sn09i8vkqr6i462h4-jq-1.7.1-dev",
+        "doc": "/nix/store/awa9kq3h05l0bpc3gn1gzq4r9rspphsb-jq-1.7.1-doc",
+        "man": "/nix/store/6zfpzcwd7m5pkf1bd3sdasjv0rxsxvjg-jq-1.7.1-man",
+        "out": "/nix/store/2vawjsrd9bmavbm7rvsjbnjaf4hbd1bs-jq-1.7.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "jq",
+      "broken": false,
+      "derivation": "/nix/store/m9p67bisshyrjmg0v1cinpkg7rymr9hv-jq-1.7.1.drv",
+      "description": "Lightweight and flexible command-line JSON processor",
+      "install_id": "jq",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
+      "name": "jq-1.7.1",
+      "pname": "jq",
+      "rev": "2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
+      "rev_count": 803506,
+      "rev_date": "2025-05-20T12:29:04Z",
+      "scrape_date": "2025-05-24T04:40:31.850619Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.7.1",
+      "outputs_to_install": [
+        "bin",
+        "man"
+      ],
+      "outputs": {
+        "bin": "/nix/store/j6q3c3rzxhv3rz9y821qylgafi3jbsl8-jq-1.7.1-bin",
+        "dev": "/nix/store/w7n2qywnma4af1m9xqz8y67rq0jn6an2-jq-1.7.1-dev",
+        "doc": "/nix/store/c52b1v91c7pwxb58z79v2aa1x8bx8dpx-jq-1.7.1-doc",
+        "man": "/nix/store/2n2vs2cb0slcj5a4i0l7pyv4fip8s6m9-jq-1.7.1-man",
+        "out": "/nix/store/i06c1lzmf07gg33mjmfp0564inxplfq5-jq-1.7.1"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "jq",
+      "broken": false,
+      "derivation": "/nix/store/gwai77aw7wrlp9701zs2wpnlli4k9yyg-jq-1.7.1.drv",
+      "description": "Lightweight and flexible command-line JSON processor",
+      "install_id": "jq",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
+      "name": "jq-1.7.1",
+      "pname": "jq",
+      "rev": "2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
+      "rev_count": 803506,
+      "rev_date": "2025-05-20T12:29:04Z",
+      "scrape_date": "2025-05-24T04:56:40.953712Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.7.1",
+      "outputs_to_install": [
+        "bin",
+        "man"
+      ],
+      "outputs": {
+        "bin": "/nix/store/if69q6bw49y67lv9f4bf78cgpf7xrnrb-jq-1.7.1-bin",
+        "dev": "/nix/store/38vgg0iqwmhh8shn12ys3wqxv24gkq5n-jq-1.7.1-dev",
+        "doc": "/nix/store/dvap16zqbcxmil71f6ivbpzx49z7brzx-jq-1.7.1-doc",
+        "man": "/nix/store/0rsic796c75zmdaa3qw74676dgcibwan-jq-1.7.1-man",
+        "out": "/nix/store/0gw2kw6zkvzg7zlqy4rrgdxjk13yg0z4-jq-1.7.1"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "jq",
+      "broken": false,
+      "derivation": "/nix/store/5db8f74lp79vjh3zijlwj5qm3azamz96-jq-1.7.1.drv",
+      "description": "Lightweight and flexible command-line JSON processor",
+      "install_id": "jq",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
+      "name": "jq-1.7.1",
+      "pname": "jq",
+      "rev": "2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
+      "rev_count": 803506,
+      "rev_date": "2025-05-20T12:29:04Z",
+      "scrape_date": "2025-05-24T05:16:10.799230Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.7.1",
+      "outputs_to_install": [
+        "bin",
+        "man"
+      ],
+      "outputs": {
+        "bin": "/nix/store/n9ch6ggimi6ri5vx62mqmzgrrkb3qfwg-jq-1.7.1-bin",
+        "dev": "/nix/store/yika3khvh871bvk5sgpcxfdbqznyi3w0-jq-1.7.1-dev",
+        "doc": "/nix/store/97zv95jlfnw4v3k0lyxmkmkqqjhx7np9-jq-1.7.1-doc",
+        "man": "/nix/store/2dmx0pgvxjmqywg25rva6cgkz94icnw7-jq-1.7.1-man",
+        "out": "/nix/store/sdqzcyfy52y0vf10nfsxy3mhv9b2vmkv-jq-1.7.1"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
